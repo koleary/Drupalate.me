@@ -1,0 +1,33 @@
+/**
+ * Hack to make css imports less tedious within individual templates.
+ */
+ 
+@import 'css_z64bqbNiX7_797RHYqm7SaRBJpDAEoKl0SXjP1P1Fo8.css';
+@import 'css_ThUn5DDTasQHIMv1MQAwyMj14lRkcVK5IsdlQeJkApY.css'; 
+@import 'css__YaQsB0qlEAvflLeyopFQFUwPHauxSbWP4nlcebb0ZY.css';
+@import 'css_KBMPbykzoh0l-8FHfrxv4SmqGMytHAXjwSJN3zctUOA.css'; 
+@import 'css_kt3sxjucS5HLJJEsWfMAbCIOuU0CDOXLg5nc23oVr78.css'; 
+@import 'css_Utg9lOlJH7JuwrP41rmn2ckVXz1r2qjOnc8MRogbTTY.css'; 
+@import 'css_WE3VJtDyaHKUhR30_5J4mcdruoEVA7a6bWn5fVeT1aE.css'; 
+@import 'css_LR7kM_ao_-QBXinGfi3HAqKizuqA0KbnjdaN2U1o6VQ.css';
+@import 'css_Tx1bxZwIkWy1OSK-K5Az-GYsqpYc9ZPl5gt8G_lRsG8.css'; 
+@import 'css_hNM_LqubeHenaubKlrWzhBdYSPAQW2M6dqo-wPF6rio.css'; 
+
+
+body {
+	width: 100%;
+}
+.js body {
+padding: 0;
+}
+
+#sidebar-first, 
+#sidebar-second, 
+.navigation, 
+#toolbar, #footer-wrapper, 
+.tabs, 
+.add-or-remove-shortcuts {
+display: block;
+}
+
+

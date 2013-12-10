@@ -1,0 +1,189 @@
+/**
+ * @file
+ * Basic styling for the Overlay child pages.
+ */
+
+/* Import working version from https://drupal.org/node/1945542 */
+@import 'overlay-tabs.css';
+
+.js {
+  background: transparent !important;
+  overflow-y: scroll;
+}
+.js body {
+  background: transparent !important;
+  margin-left: 0;
+  margin-right: 0;
+  padding: 20px 0;
+}
+
+#overlay {
+  box-sizing: border-box;
+  display: block;
+  margin: 0 auto;
+  max-width: 80em;
+  max-width: 80rem;
+  min-height: 100px;
+  position: relative;
+  padding: 6em 40px;
+  width: 100%;
+}
+#overlay-titlebar {
+  background: hsla(0, 0%, 0%, 0.5); /* any value in lightness makes the effect look muddy and unattractive. Using alpha only gives a glassy appearance -KO */
+  border-top: 1px solid #666; /* without border here header diappears on dark backgrounds. */
+  border-right: 1px solid #444; 
+  border-left: 1px solid #444; /* Darker value left and right suggests top light (unappologetically skeumorphic -KO) */
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  position: relative;
+  white-space: nowrap;
+  z-index: 100;
+}
+#overlay-content {
+  background: #fff;
+  clear: both;
+  color: #000;
+  position: relative;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+#overlay #page {
+  background: transparent;
+}
+#overlay-footer-wrapper {
+  overflow: hidden;
+  padding: 15px;
+}
+#overlay-footer {
+  float: left; /* LTR */
+  margin: 0;
+  padding: 0.3em 0;
+}
+#overlay-footerbar {
+  padding: 10px 20px;
+  border-top: 1px solid #bbb;
+  -moz-border-radius: 0px 0px 5px 5px ;
+  -webkit-border-radius: 0px 0px 5px 5px;
+  border-radius: 0px 0px 5px 5px;
+  background: #F5F5F2;
+}
+#overlay-title-wrapper {
+  overflow: hidden;
+  padding: 15px;
+}
+#overlay-title {
+  font-family:"Source Sans Pro Semibold";
+  font-weight: 600;
+  color: #fff;
+  float: left; /* LTR */
+  font-size: 20px;
+  margin: 0;
+  padding: 0.3em 0;
+}
+#overlay-title em {
+  font-family:"Source Sans Pro";
+  font-weight: 300;
+  font-style: normal;
+}
+#overlay-title:active,
+#overlay-title:focus {
+  outline: 0;
+}
+.overlay #skip-link a {
+  color: #fff; /* This is white to contrast with the dark background behind it. */
+}
+#overlay-close-wrapper {
+  position: absolute;
+  right: 31px; /* LTR */
+  top: 23px;
+}
+#overlay-close,
+#overlay-close:hover {
+  background: transparent url('images/close.png') no-repeat;
+  display: block;
+  height: 16px;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  width: 16px;
+}
+
+/**
+ * Add to shortcuts link
+ */
+#overlay-titlebar .add-or-remove-shortcuts {
+  padding-top: 0.4em;
+}
+#overlay-titlebar .add-or-remove-shortcuts .icon {
+  margin-top: 4px;
+}
+#overlay-titlebar .add-or-remove-shortcuts .text {
+  padding-top: 0;
+}
+/**
+ * Disable message.
+ */
+#overlay-disable-message {
+  background-color: #fff;
+  margin: 0 auto 20px;
+  width: 80%;
+  border-radius: 0 0 8px 8px;
+}
+.overlay-disable-message-focused {
+  padding: 0.5em;
+}
+.overlay-disable-message-focused a {
+  display: block;
+  float: left;
+}
+.overlay-disable-message-focused #overlay-dismiss-message {
+  float: right;
+}
+
+/**
+ * Summary and detail interactions.
+ */
+summary::-webkit-details-marker {
+  display: none;
+}
+#overlay form > div > details {
+  margin: 0;
+  border: none;
+}
+#overlay form > div > details > summary {
+  background-color: #fff;
+  padding: 10px 20px;
+}
+#overlay form > div > details > summary a {
+  background: transparent url('../images/pencil_sprite.png') no-repeat;
+  padding: 0 30px;
+}
+#overlay form > div > details[open] > .details-wrapper,
+#overlay form > div > details[open] > summary {
+  background-color: #fff;
+}
+#overlay form > div > details[open] > summary .summary {
+  display: none;
+}
+#overlay form > div > details[open] > summary a {
+  background-position: 0 -31px;
+  color: #555;
+}
+#overlay .form-actions {
+  margin-top: 2em;
+}
+
+/**
+ * Simpler styling of vertical tabs inside overlay
+ */
+ 
+#overlay div.vertical-tabs {
+  margin: 10px 0 0 -30px;
+}
+#overlay div.vertical-tabs .vertical-tabs-panes {
+  margin: 0 30px 0 240px; 
+}
+#overlay .form-item form-type-vertical-tabs .form-item {
+  margin-left: 30px;
+  border: 0px solid transparent;
+}

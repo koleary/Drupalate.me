@@ -1,0 +1,110 @@
+//
+// Mixins
+//
+// version 1.0
+
+// Clearfix
+// --------
+.cf {
+  *zoom: 1;
+  &:before,
+  &:after {
+    display: table;
+    content: "";
+    line-height: 0;
+  }
+  &:after {
+    clear: both;
+  }
+}
+
+// Inline-block fix
+// --------
+@mixin inline-block {
+    display :inline-block;
+    zoom :1;
+    *display :inline;
+    vertical-align :top;
+    margin :0px;
+    padding :0px;
+}
+
+@mixin box-sizing( $type: border-box ) {
+    -webkit-box-sizing: $type;
+       -moz-box-sizing: $type;
+         -o-box-sizing: $type;
+        -ms-box-sizing: $type;
+            box-sizing: $type;
+}
+
+// mq writing
+// --------
+@mixin breakpoint($point) {
+  @media (min-width: $point){@content;}
+}
+
+// Return mq or not
+// --------
+@mixin media($point){
+  @if($media-queries){
+    @include breakpoint($point){
+      @content;
+    }
+  }
+  @else if($media-queries == false){
+    @content;
+  }
+}
+
+// Animate
+
+@mixin move($x,$y){
+  -webkit-transform: translate($x,$y);
+  -moz-transform: translate($x,$y);
+  -ms-transform: translate($x,$y);
+  -o-transform: translate($x,$y);
+  transform: translate($x,$y);
+
+  -webkit-transition: -webkit-transform .5s ease-in-out;
+  -moz-transition: -moz-transform .5s ease-in-out;
+  -o-transition: -o-transform .5s ease-in-out;
+  transition: transform .5s ease-in-out;
+}
+
+// Type helpers
+//---------
+
+@mixin font-size($size: 1.6, $baseLine: $size * 1.5) {
+  font-size: ($size * 10) + px;
+  line-height: ($baseLine * 10) + px;
+  margin:($baseLine * 10) + px 0;
+  font-size: $size + rem;
+  line-height: $baseLine + em;
+  margin-top:$baseLine + em!important;
+  margin-bottom:$baseLine + em!important;
+}
+
+
+@mixin svg-with-fallback($name) {
+  background-image: url('../icons/#{$name}.png');
+  background-image: none, url('../icons/#{$name}.svg');
+}
+
+@mixin box-shadow($top, $left, $blur, $color, $inset: false) {
+  @if $inset {
+    -webkit-box-shadow:inset $top $left $blur $color;
+    -moz-box-shadow:inset $top $left $blur $color;
+    box-shadow:inset $top $left $blur $color;
+  } @else {
+    -webkit-box-shadow: $top $left $blur $color;
+    -moz-box-shadow: $top $left $blur $color;
+    box-shadow: $top $left $blur $color;
+  }
+}
+
+@mixin transition($speed, $what:"all"){
+   -webkit-transition: #{$what} $speed ease-in-out;
+  -moz-transition: #{$what} $speed ease-in-out;
+  -o-transition: #{$what} $speed ease-in-out;
+  transition: #{$what} $speed ease-in-out;
+}

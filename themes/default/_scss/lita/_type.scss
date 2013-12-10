@@ -1,0 +1,66 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400italic,600italic,400,300,600);
+
+p {
+  margin: 0 0 $baseLineHeight;
+  @include font-size(1.6, $baseLineHeight);
+  x-webkit-font-smoothing:antialiased;
+}
+
+a {
+  -webkit-transition: all 0.15s;
+       -moz-transition: all 0.15s;
+        -ms-transition: all 0.15s;
+         -o-transition: all 0.15s;
+            transition: all 0.15s;
+}
+
+small   {font-size: .75em;}
+
+strong  { font-weight: $fontBold; }
+em      { font-style: italic; }
+cite    { font-style: normal; }
+label {   @include font-size(1.6, 1);}
+
+h1,h2,h3,h4,h5,h6{
+  color:$headingsColor;
+  font-weight:$fontRegular;
+  -webkit-font-smoothing:subpixel-antialiased;
+  line-height: 1.5;
+  margin-top: 0;
+}
+
+h4,h5,h6{
+  margin-top:$baseLineHeight/2;
+  margin-bottom:$baseLineHeight/2;
+}
+
+h1,.un{
+  @include font-size(3, 1);
+  @include media($smallPoint) {
+
+  }
+}
+
+h2,.deux{
+  @include font-size(2.4,1);
+  @include media($smallPoint) {
+
+  }
+}
+
+h3,.trois{
+
+}
+
+h4,.quatre{
+
+}
+
+h5,.cinq{
+
+}
+
+h6,.six{
+
+}
+

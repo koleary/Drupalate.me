@@ -1,0 +1,75 @@
+
+{% block content %}
+    <div class="l-container content-header clearfix">
+      <nav class="breadcrumb" role="navigation">
+        <h2 class="visually-hidden">You are here</h2>
+        <ol>
+          <li><a href="#">Admin</a></li>
+          <li><a href="#">Content</a></li>
+        </ol>
+      </nav>
+      <div class="heading-a"><h1 class="content-header__title"><em>longtext</em> settings for <em>Article</em></h1> <span class="content-header__action">☆</span>
+      </div>
+    </div>
+
+    <div class="l-container">
+
+     <p class="message message--success">
+      Updated field <em>longtext field settings.</em>
+    </p>
+
+    <div class="form-item leader">
+      <label>Label*</label>
+      <input type="text" value="longtext" class="input-text" />
+    </div>
+
+    <div class="form-item leader">
+      <label>Help text</label>
+        <textarea class="textarea" rows="5" cols="60"></textarea>
+      <p class="form-item-description">This text field is disabled.</p>
+    </div>
+
+    <div class="form-item leader">
+      <input type="checkbox" value="1" class="input-checkbox"> <label class="label--inline">Required field</label>
+    </div>
+
+    <details aria-describedby="edit---description" class="leader" open="open" id="edit-"><summary role="button" aria-controls="edit-" aria-expanded="">Default value</summary>
+      <div class="details__body">
+        <div class="details-description">The default value for this field, used when creating new content.</div><div class="field-type-text-with-summary field-name-body field-widget-text-textarea-with-summary form-wrapper" id="edit-body">
+        <textarea aria-describedby="edit-instance-description--description" id="edit-instance-description" name="instance[description]" rows="6" cols="60" class="form-textarea resize-vertical textarea"></textarea>
+      </div></div></details>
+
+    <fieldset class="form-item pane leader">
+      <legend class="heading-c">Text processing</legend>
+      <div class="form-radios"><div class="form-item form-type-radio form-item-instance-settings-text-processing">
+        <input type="radio" id="edit-instance-settings-text-processing-0" name="instance[settings][text_processing]" value="0" class="form-radio">
+        <label class="option label--inline" for="edit-instance-settings-text-processing-0">Plain text</label>
+      </div>
+      <input type="radio" id="edit-instance-settings-text-processing-1" name="instance[settings][text_processing]" value="1" checked="checked" class="form-radio">
+      <label class="option label--inline" for="edit-instance-settings-text-processing-1">Filtered text (user selects text format)</label>
+    </fieldset>
+
+    <div class="form-item leader">
+     <input aria-describedby="edit-instance-settings-display-summary--description" type="checkbox" id="edit-instance-settings-display-summary" name="instance[settings][display_summary]" value="1" checked="checked" class="form-checkbox"> <label class="option label--inline" for="edit-instance-settings-display-summary">Summary input</label>
+    <p class="form-item-description" id="edit-instance-settings-display-summary--description">This allows authors to input an explicit summary, to be displayed instead of the automatically trimmed text when using the "Summary or trimmed" display type.</p>
+    </div>
+
+    <div class="form-item leader">
+     <label for="edit-instance-widget-settings-rows">Rows<abbr class="form-required" title="This field is required.">*</abbr></label> <input type="number" id="edit-instance-widget-settings-rows" name="instance[widget][settings][rows]" value="9" step="1" min="1" class="form-number required input-text" required="required" aria-required="true">
+    </div>
+
+    <div class="form-item leader">
+     <label for="edit-instance-widget-settings-placeholder">Placeholder</label>
+     <input aria-describedby="edit-instance-widget-settings-placeholder--description" type="text" id="edit-instance-widget-settings-placeholder" name="instance[widget][settings][placeholder]" value="" size="60" maxlength="128" class="form-text input-text">
+    <p class="form-item-description" id="edit-instance-widget-settings-placeholder--description">Text that will be shown inside the field until a value is entered. This hint is usually a sample value or a brief description of the expected format.</p>
+    </div>
+
+    <div class="form-actions form-wrapper leader trailer" id="edit-actions">
+      <input type="submit" id="edit-submit" name="op" value="Save settings" class="button form-submit button--primary">
+      <input type="submit" id="edit-delete" name="op" value="Delete field" class="button form-submit">
+    </div>
+  <p>&nbsp</p>
+  </section>
+
+  </div>
+{% endblock %}

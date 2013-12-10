@@ -1,0 +1,92 @@
+// Forms
+
+// GENERAL STYLES
+// --------------
+
+// Make all forms have space below them
+form {
+  margin: 0 0 $baseLineHeight;
+}
+
+fieldset {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+
+input,
+button,
+select,
+textarea {
+  font-family: $baseFontFamily;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+select,
+textarea,
+input[type="text"],
+input[type="datetime"],
+input[type="date"],
+input[type="month"],
+input[type="time"],
+input[type="week"],
+input[type="number"],
+input[type="email"],
+input[type="url"]
+{
+  display: inline-block;
+  height: $baseLineHeight;
+  padding: 6px 1%;
+  margin-bottom: $baseLineHeight / 2;
+  font-size: $baseFontSize;
+  line-height: $baseLineHeight;
+  color: $gray;
+  vertical-align: middle;
+}
+
+input,
+textarea,
+.uneditable-input {
+  width: 85%; // plus 12px padding and 2px border
+}
+
+textarea {
+  height: auto;
+}
+
+textarea,
+input[type="text"],
+input[type="datetime"],
+input[type="date"],
+input[type="month"],
+input[type="time"],
+input[type="week"],
+input[type="number"],
+input[type="email"],
+input[type="url"] {
+  background-color: transparent;
+  border: 1px solid $grayLighter;
+  // Focus state
+  &:focus {
+    border-color: $primaryColor;
+    outline: 0;
+    outline: thin dotted \9; /* IE6-9 */
+  }
+}
+
+// Validation
+.form-group .errors{
+  margin-top:-$baseLineHeight /2;
+  margin-bottom:$baseLineHeight /2;
+  span{
+    color:$white;
+    display:inline-block;
+    padding:0 12px;
+    background-color:$errorColor;
+  }
+}

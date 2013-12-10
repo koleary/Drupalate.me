@@ -1,0 +1,84 @@
+.cf:before,
+.cf:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.cf:after {
+    clear: both;
+}
+/**
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+.cf {
+    *zoom: 1;
+}
+
+
+.wrap {
+  margin:0 5%;
+  padding:$baseVspace 0;
+  @extend .cf;
+
+  @include media($smallPoint) {
+    margin:0 3%;
+    // padding:$smallPointVspace 0;
+  }
+
+  @include media("1200px") {
+    margin:0 auto;
+    max-width: 1000px;
+  }
+}
+
+.content {
+  @extend .cf;
+  header {
+     @include column(12);
+  }
+}
+
+
+[class^="col"] {
+  background:darken($mutedColor, 5%);
+  padding:1em;
+  text-align: center;
+  @include box-sizing();
+  @include font-size(1.4,1);
+}
+.col-one {
+   @include column(12);
+   @include media($smallPoint) {
+    @include column(3);
+   }
+   @include media($mediumPoint) {
+    @include column(1);
+   }
+}
+.col-two {
+   @include column(2);
+}
+.col-three {
+   @include column(3);
+}
+.col-four {
+   @include column(4);
+}
+.col-six {
+  @include column(6);
+}
+.main-header{
+  @include column(12);
+}
+.col-third-one {
+  @include column(4);
+}
+.col-third-three {
+  @include column(8);
+}
+article {
+  &.post {
+    @include column(6);
+  }
+}

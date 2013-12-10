@@ -1,0 +1,46 @@
+/**
+ * @file
+ * Tabbed navigation
+ */
+
+ul.primary {
+  float: none;
+  border-bottom: none;
+  text-transform: uppercase;
+  font-size: 0.923em;
+  margin: 0;
+  padding-top: 0;
+}
+
+ul.primary li {
+  float: left;
+  list-style: none;
+  height: 2.60em;
+  margin: 0;
+}
+
+ul.primary li a:link, 
+ul.primary li a.active, 
+ul.primary li a:active, 
+ul.primary li a:visited, 
+ul.primary li.active a {
+  position: relative;
+  display: block;
+  overflow: hidden;
+  border: 1px solid #bfbfbf;
+  background-color: #f2f2f0;
+  color: #0074bd;
+  text-transform: uppercase;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  letter-spacing: 0.1em;
+  font-weight: 600;
+  line-height: 24px;
+  border-radius: 4px 4px 0 0;
+  line-height: 1.5em;
+}
+ul.primary li a:focus, 
+ul.primary li a:hover  {
+  color: #008ee6;
+  background-color: #fafaf7;
+}

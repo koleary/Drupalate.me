@@ -1,0 +1,36 @@
+%btn-styles {
+	display: inline-block;
+	color:$white;
+	text-decoration: none;
+	&:hover {
+		color:$white;
+	}
+}
+.btn-primary {
+	@extend %btn-styles;
+	background: $primaryBtn;
+	padding:.5em 1%;
+	@include media($smallPoint) {
+
+	}
+	&:hover, &:active {
+
+	}
+}
+
+.btn-secondary {
+	background: $secondaryBtn;
+	@extend %btn-styles;
+	padding:.5em 1%;
+	@include media($smallPoint) {
+
+	}
+}
+.section-tinted {
+
+}
+
+hr.drk {
+
+}
+

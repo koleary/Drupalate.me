@@ -1,0 +1,84 @@
+/**
+ * Hack to make css imports less tedious within individual templates.
+ */
+
+@import 'vendor/normalize.css';
+
+/**
+ * Import aggregated Drupal 8 base css files to work on top of (aggregated with stark theme set to default)
+ */
+/* toolbar */
+
+@import 'css__YaQsB0qlEAvflLeyopFQFUwPHauxSbWP4nlcebb0ZY.css';
+
+@import 'css_emS46Tb6C4WP9Ba9BgSGz4jbfIsSGcuixEPqbl7GIM4.css'; 
+@import 'css_eZsly_bPo2W_7tpYcxUhykZ59OswEoGo8nvr-gwV-u0.css'; 
+@import 'css_pPzZKtXpwuNkj4lY8ymmA5YRrOr3BXOXbPfdSK6EmGI.css'; 
+
+/**
+ * Import current seven theme css files to work on top of. pulled from ember theme 
+ */
+
+@import 'theme/styles/style.css'; 
+@import 'theme/styles/jquery.ui.theme.css';
+@import 'theme/styles/system.messages.css';
+@import 'theme/styles/system.theme.css'; 
+
+body {
+	width: 100%;
+}
+.js body {
+	padding: 0;
+}
+#toolbar-bar {
+	position: fixed;
+	width: 100%;
+}
+.toolbar-lining.clearfix {
+	position: fixed;
+	width: 100%;
+	margin-top: 40px;
+	border-bottom: 1px solid #ccc;
+	background: #fff;
+}
+.interface {
+	margin-top: 78px;
+}
+p, 
+blockquote, 
+pre, 
+h1, 
+h2, 
+h3, 
+h4, 
+h5, 
+h6, 
+article, 
+aside, 
+details, 
+figcaption, 
+figure, 
+footer, 
+header, 
+hgroup, 
+nav, 
+section, 
+summary, 
+dt, 
+dd, 
+li, 
+.more-help-link, 
+.more-link {
+	max-width: 100%;
+}
+
+#branding {
+	background-color: #444;
+}
+
+.hidden {
+	display: none;
+}
+
+
+

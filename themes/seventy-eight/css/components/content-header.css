@@ -1,0 +1,9 @@
+#branding h1.page-title {
+  float: none;
+  display: inline-block;
+}
+.add-or-remove-shortcuts.remove-shortcut,
+.add-or-remove-shortcuts.add-shortcut  {
+  display: inline-block;
+  padding-top: 2px;
+}

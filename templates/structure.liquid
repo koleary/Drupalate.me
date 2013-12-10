@@ -1,0 +1,78 @@
+
+{% block content %}
+<header id="branding" class="clearfix">
+  
+  <nav class="breadcrumb" role="navigation">
+    <h2 class="visually-hidden">You are here</h2>
+      <ol>
+        <li><a href="/">Home</a></li>
+        <li><a href="/admin">Administration</a></li>
+      </ol>
+  </nav>
+
+  <h1 class="page-title">Structure</h1>
+    <div class="add-or-remove-shortcuts add-shortcut">
+      <a href="#"><span class="icon">Add or remove shortcut</span><span class="text">Add to <em class="placeholder">Default</em> shortcuts</span></a>
+    </div>
+</header>
+
+<div id="page">
+    
+  <div class="tabs-secondary clearfix" role="navigation"></div>
+    
+  <main id="content" class="clearfix" role="main">
+    <div class="visually-hidden"><a id="main-content"></a></div>
+    <div id="console" class="clearfix"></div>
+  
+  <div class="region region-content">
+    
+  <div class="block block-system" id="block-seven-content">
+
+  <div class="content">
+    <ul class="admin-list">
+      <li><a href="/block">
+        <span class="label">Block layout</span>
+        <div class="description">Configure what block content appears in your site's sidebars and other regions.</div></a>
+      </li>
+      <li><a href="/comments">
+        <span class="label">Comment forms</span>
+        <div class="description">Manage fields and displays settings for comment forms.</div></a>
+      </li>
+      <li><a href="/contact">
+        <span class="label">Contact form categories</span>
+        <div class="description">Create a system contact form and set up categories for the form to use.</div></a>
+      </li>
+      <li><a href="/types">
+        <span class="label">Content types</span>
+        <div class="description">Manage content types, including default status, front page promotion, comment settings, etc.</div></a>
+      </li>
+      <li><a href="/display-modes">
+        <span class="label">Display modes</span>
+        <div class="description">Configure what displays are available for your content and forms.</div></a>
+      </li>
+      <li><a href="/menu">
+        <span class="label">Menus</span>
+        <div class="description">Add new menus to your site, edit existing menus, and rename and reorganize menu links.</div></a>
+      </li>
+      <li><a href="/taxonomy">
+        <span class="label">Taxonomy</span>
+        <div class="description">Manage tagging, categorization, and classification of your content.</div></a>
+      </li>
+      <li><a href="/views">
+        <span class="label">Views</span>
+        <div class="description">Manage customized lists of content.</div></a>
+      </li>
+    </ul>
+  </div>
+</div>
+
+  </div>
+
+    </main>
+
+    <footer id="footer" role="contentinfo">
+      
+    </footer>
+
+  </div>
+{% endblock %}

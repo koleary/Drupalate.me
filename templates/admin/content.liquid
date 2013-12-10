@@ -1,0 +1,73 @@
+
+{% block content %}
+    <div class="l-container content-header clearfix">
+      <div class="heading-a"><h1 class="content-header__title">Content</h1> <span class="content-header__action">☆</span>
+      </div>
+    </div>
+
+    <div class="l-container">
+      <div class="tabs leader trailer">
+      <ul class="tabs__group">
+        <li class="tabs__tab is-active">
+          <a class="tabs__tab__link" href="#">List</a>
+        </li>
+        <li class="tabs__tab">
+          <a class="tabs__tab__link" href="#">Settings</a>
+        </li>
+      </ul>
+    </div>
+
+      <button class="button button--small button--primary" type="button">Add content</button>
+      
+    <table class="table leader">
+      <thead>
+        <tr >
+          <th class="heading-c"><a class="table-header table-header--sorting" href="#">View Name</a></th>
+          <th class="heading-c col-priority-medium"><a class="table-header table-header--sorting" href="#">Description</a></th>
+          <th class="heading-c col-priority-medium">Tag</th>
+          <th class="heading-c col-priority-low"><a class="is-active table-header table-header--sorting" href="#">Path</a></th>
+          <th class="heading-c">Operations</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><h3 class="header-c">MyView</h3></td>
+          <td class="col-priority-medium">It has a description</td>
+          <td class="col-priority-medium"></td>
+          <td class="col-priority-low"><a href="#">/myview</a></td>
+          <td ><button class="button button--small button--popup js-popup" type="button" aria-haspopup="true" data-target="popup-1" data-component="popup">Edit <i class="caret" aria-hidden="true"></i></button></td>
+        </tr>
+        <tr>
+          <td><h3 class="header-c">Viw</h3></td>
+          <td class="col-priority-medium"></td>
+          <td class="col-priority-medium"></td>
+          <td class="col-priority-low"><a href="#">/viw</a></td>
+          <td ><button class="button button--small button--popup js-popup" type="button" aria-haspopup="true" data-target="popup-2" data-component="popup">Edit <i class="caret" aria-hidden="true"></i></button></td>
+        </tr>
+      </tbody>
+    </table>
+
+   <div class="popup" id="popup-1" aria-hidden="true">
+      <ul class="menu js-menu" role="menu" data-component="menu" tabindex="-1">
+        <li role="presentation">
+          <a href="#" class="menu__item js-menu__item" role="menuitem" id="ui-id-15">Edit</a>
+        </li>
+        <li role="presentation">
+          <a href="#" class="menu__item js-menu__item" role="menuitem" id="ui-id-16">Delete</a>
+        </li>
+      </ul>
+    </div>
+
+  <div class="popup" id="popup-2" aria-hidden="true">
+    <ul class="menu js-menu" role="menu" data-component="menu" tabindex="-1">
+      <li role="presentation">
+        <a href="#" class="menu__item js-menu__item" role="menuitem" id="ui-id-15">Edit</a>
+      </li>
+      <li role="presentation">
+        <a href="#" class="menu__item js-menu__item" role="menuitem" id="ui-id-16">Delete</a>
+      </li>
+    </ul>
+  </div>
+
+  </div>
+{% endblock %}

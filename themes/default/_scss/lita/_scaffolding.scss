@@ -1,0 +1,40 @@
+//
+// Scaffolding
+// --------------------------------------------------
+
+html {
+  font-size: 62.5%;
+}
+
+// Body reset
+// -------------------------
+
+body {
+  margin: 0;
+  font-family: $baseFontFamily;
+  line-height: $baseLineHeight;
+  font-weight:$fontRegular;
+  color: $textColor;
+  text-rendering: optimizeLegibility;
+  position:relative;
+}
+
+
+.interface {
+  background: $white url('/themes/default/bg-light.jpg');
+  position: relative;
+}
+
+// Links
+// -------------------------
+
+a {
+  color: $linkColor;
+  text-decoration: none;
+}
+a:hover,
+a:focus {
+  color: $linkColorHover;
+}
+
+img{max-width:100%;}

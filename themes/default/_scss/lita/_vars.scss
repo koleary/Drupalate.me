@@ -1,0 +1,89 @@
+//
+// Variables
+// --------------------------------------------------
+
+
+// Global values
+// --------------------------------------------------
+
+$images: '../images';
+
+// Grays
+// -------------------------
+$black:                 #000;
+$grayDarker:            #222;
+$grayDark:              #333;
+$gray:                  #555;
+$grayLight:             #999;
+$grayLighter:           #eeeeee;
+$grayLightest: 			#f5f5f5;
+$white:                 #fff;
+
+
+// Accent colors
+// -------------------------
+$primaryColor:          #3389bb; // Bright blue
+$secondaryColor:        #f66260; // Light Muted Red
+$thirdColor:            #8e8c07; // Bogey green
+$forthColor:            #96c4df; // Light Blue (footer type color)
+$mutedColor:            #f3fcfe; // Light Blue
+$errorColor:            #cc0000; // red
+
+$accentColor: 			#6d8f07; // Green
+
+
+// Button colors
+// -------------------------
+
+$defaultBtn: #fff;
+$primaryBtn: $primaryColor;
+$secondaryBtn: $thirdColor;
+
+// Scaffolding
+// -------------------------
+$bodyBackground:        $secondaryColor;
+$textColor:             $gray;
+
+
+// Links
+// -------------------------
+$linkColor:             $primaryColor;
+$linkColorHover:        $primaryColor;
+
+
+// Typography
+// -------------------------
+$sansFontFamily:        "franklin-gothic-urw", 'Helvetica Neue', Helvetica, Arial, sans-serif; //"proxima-nova"
+$serifFontFamily:       Georgia, "Times New Roman", Times, serif;
+
+$fontLight:             300;
+$fontRegular:           400;
+$fontSemi: 				600;
+$fontBold:              700;
+
+$baseFontSize:          100%;
+$baseFontFamily:        $sansFontFamily;
+$baseLineHeight:        24px;
+$altFontFamily:         $serifFontFamily;
+
+$headingsFontFamily:    inherit; // empty to use BS default, $baseFontFamily
+$headingsFontWeight:    $fontBold;    // instead of browser default, bold
+$headingsColor:         inherit; // empty to use BS default, $textColor
+
+
+
+// Component sizing
+// -------------------------
+
+$media-queries: 		true !default;
+
+$headerHeightSmall:     $baseLineHeight * 3;
+$headerHeight:          $baseLineHeight * 4;
+
+$baseVspace:         	1em;
+$smallPointVspace:      1.5em;
+$mediumPointVspace:     2em;
+
+$smallPoint:         	767px;
+$mediumPoint:        	1024px;
+$bigPoint:            	1600px;

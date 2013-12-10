@@ -1,0 +1,367 @@
+
+{% block content %}
+    <div id="branding" class="clearfix">
+      <nav class="breadcrumb" role="navigation">
+        <ol>
+          <li><a href="#">Admin</a></li>
+          <li><a href="#">Content</a></li>
+        </ol>
+      </nav>
+      <h1 class="page-title">Content</h1> <span class="add-or-remove-shortcuts add-shortcut">☆</span>
+    </div>
+
+  <div id="page">
+    <div class="l-container position-container is-horizontal-enabled is-horizontal">
+      <nav role="navigation" data-drupal-nav-tabs="collapsible: true;" class="">
+        <button class="reset-appearance tabs__tab tabs__trigger js-nav-tabs__trigger">&bull;&bull;&bull;</button>
+
+        <div class="tabs js-nav-tabs__target">
+          <a class="tabs__tab" href="#">
+            Edit <i class="icon icon--next" aria-hidden="true"></i>
+          </a>
+          <a class="tabs__tab" href="#">
+            Manage Fields <i class="icon icon--next" aria-hidden="true"></i>
+          </a>
+          <a class="tabs__tab is-active" href="#">
+            Manage Display <i class="icon icon--next" aria-hidden="true"></i>
+          </a>
+          <a class="tabs__tab" href="#">
+            Comment Fields <i class="icon icon--next" aria-hidden="true"></i>
+          </a>
+          <a class="tabs__tab" href="#">
+            Comment Display <i class="icon icon--next" aria-hidden="true"></i>
+          </a>
+        </div>
+      </nav>
+
+      <nav role="navigation" data-drupal-nav-tabs>
+        <div class="secondary-tabs">
+          <a class="secondary-tabs__tab is-active" href="#">Default display</a>
+          <a class="secondary-tabs__tab" href="#">Teaser</a>
+          <a class="secondary-tabs__tab" href="#">Full node</a>
+          <a class="secondary-tabs__tab" href="#">Really long extra item</a>
+        </div>
+      </nav>
+
+      <section>
+
+      <div class="action-links">
+      <button class="button button--small button--primary" type="button">Add content</button>
+      </div>
+
+      <div class="view-filters">
+        <form class="views-exposed-form" action="/admin/content" method="get" id="views-exposed-form-content-page-1" accept-charset="UTF-8"><div>
+          <div class="views-exposed-form clearfix">
+            <div class="form-item form-type-select form-item-status">
+              <label for="edit-status">Published status</label> <select id="edit-status" name="status" class="form-select"><option value="All" selected="selected">- Any -</option><option value="1">Published</option><option value="2">Unpublished</option></select>
+            </div>
+            <div class="form-item form-type-select form-item-type">
+              <label for="edit-type">Type</label> <select id="edit-type" name="type" class="form-select"><option value="All" selected="selected">- Any -</option><option value="article">Article</option><option value="page">Basic page</option></select>
+            </div>
+            <div class="form-actions form-wrapper" id="edit-actions"><input type="submit" id="edit-submit-content" name="" value="Filter" class="button form-submit" /></div>
+            </div>
+          </div>
+        </form>
+      </div>
+      
+    <table class="table leader">
+      <thead>
+        <tr >
+          <th class="heading-c"><a class="table-header table-header--sorting" href="#">Title</a></th>
+          <th class="heading-c col-priority-medium"><a class="table-header table-header--sorting" href="#">Content type</a></th>
+          <th class="heading-c col-priority-medium">Author</th>
+          <th class="heading-c col-priority-low"><a class="is-active table-header" href="#">Status</a></th>
+          <th class="heading-c col-priority-low"><a class="is-active table-header table-header--sorting" href="#">Updated</a></th>
+          <th class="heading-c">Operations</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="col-priority-high">Node 1</td>
+          <td class="col-priority-medium">Article</td>
+          <td class="col-priority-medium">Joe Jones</td>
+          <td class="col-priority-low"><a href="#">Published</td>
+          <td class="col-priority-low"><a href="#">12/23/2013</td>
+          <td ><button class="button button--small button--popup js-popup" type="button" aria-haspopup="true" data-target="popup-1" data-component="popup">Edit <i class="caret" aria-hidden="true"></i></button></td>
+        </tr>
+        <tr>
+          <td class="col-priority-high">Node 1</td>
+          <td class="col-priority-medium">Article</td>
+          <td class="col-priority-medium">Joe Jones</td>
+          <td class="col-priority-low"><a href="#">Published</td>
+          <td class="col-priority-low"><a href="#">12/23/2013</td>
+          <td ><button class="button button--small button--popup js-popup" type="button" aria-haspopup="true" data-target="popup-1" data-component="popup">Edit <i class="caret" aria-hidden="true"></i></button></td>
+        
+      </tbody>
+    </table>
+
+   <div class="popup" id="popup-1" aria-hidden="true">
+      <ul class="menu js-menu" role="menu" data-component="menu" tabindex="-1">
+        <li role="presentation">
+          <a href="#" class="menu__item js-menu__item" role="menuitem" id="ui-id-15">Edit</a>
+        </li>
+        <li role="presentation">
+          <a href="#" class="menu__item js-menu__item" role="menuitem" id="ui-id-16">Delete</a>
+        </li>
+      </ul>
+    </div>
+
+  <div class="edit-actions">
+    <button class="button button--primary" type="button">Save settings</button>
+  </div>
+
+  <ul class="clearfix">
+      <li class="inline-sibling">
+
+        <button class="button" type="button">Button (button)</button>
+
+      </li>
+      <li class="inline-sibling">
+
+        <button class="button button--primary" type="button">Primary (button)</button>
+
+      </li>
+      <li class="inline-sibling">
+
+        <button class="button" type="button" disabled>Button (button, disabled)</button>
+
+      </li>
+    </ul>
+    <ul class="clearfix">
+      <li class="inline-sibling">
+
+        <input type="submit" class="button" value="Button (submit)" />
+
+      </li>
+      <li class="inline-sibling">
+
+        <input type="submit" class="button button--primary" value="Primary (submit)" />
+
+      </li>
+      <li class="inline-sibling">
+
+        <input type="submit" class="button" value="Button (submit, disabled)" disabled />
+
+      </li>
+    </ul>
+    <ul class="clearfix">
+      <li class="inline-sibling">
+
+        <a href="#" class="button">Button (link)</a>
+
+      </li>
+      <li class="inline-sibling">
+
+        <a href="#" class="button button--primary">Primary (link)</a>
+
+      </li>
+      <li class="inline-sibling">
+
+        <a href="#" class="button is-disabled">Button (link, disabled)</a>
+
+      </li>
+    </ul>
+    <ul class="clearfix">
+      <li class="inline-sibling">
+
+        <button class="button button--small" type="button">Small</button>
+
+      </li>
+      <li class="inline-sibling">
+
+        <input type="submit" class="button button--small" value="Small (submit)" />
+
+      </li>
+      <li class="inline-sibling">
+
+        <a href="#" class="button button--small">Small (link)</a>
+
+      </li>
+      <li class="inline-sibling">
+
+        <button class="button button--small" type="button" disabled>Small (disabled)</button>
+
+      </li>
+      <li class="inline-sibling">
+
+        <button class="button button--small button--primary" type="button">Small Primary</button>
+
+      </li>
+      <li class="inline-sibling">
+
+        <button class="button button--primary button--small" type="button" disabled>Small Primary (disabled)</button>
+
+      </li>
+    </ul>
+    <ul class="clearfix">
+      <li class="inline-sibling">
+
+        <button class="link link--danger" type="button">Danger action</button>
+
+      </li>
+      <li class="inline-sibling">
+
+        <button class="link link--danger" type="button" disabled>Danger action (disabled)</button>
+
+      </li>
+    </ul>
+
+    <div class="leader">
+        <details>
+          <summary>Show/Hide me</summary>
+          <div class="details__body">
+            <button class="button" type="button">Sleepy</button>
+            <button class="button" type="button">Dopey</button>
+          </div>
+        </details>
+    </div>
+
+    <div class="leader">
+      <div class="details-group">
+        <details>
+          <summary>Show/Hide me</summary>
+          <div class="details__body">
+            <form>
+                <label>Text field</label>
+                <input type="text" class="input-text">
+                <label>Textarea</label>
+                <textarea class="textarea"></textarea>
+            </form>
+          </div>
+        </details>
+        <details>
+          <summary>Show/Hide me 1</summary>
+          <div class="details__body">
+            <label>Text field</label>
+            <input type="text" class="input-text is-disabled" disabled="">
+            <p class="form-item-description">This text field is disabled.</p>
+          </div>
+        </details>
+        <details>
+          <summary>Show/Hide me 1</summary>
+          <div class="details__body">
+            <form>
+              <label>Text field</label>
+              <input type="text" class="input-text">
+            </form>
+          </div>
+        </details>
+      </div>
+    </div>
+
+    <form>
+      <div class="block-sibling">
+
+        <label>Text field</label>
+        <input type="text" class="input-text" />
+
+      </div>
+      <div class="block-sibling">
+
+        <label>Text field</label>
+        <input type="text" class="input-text is-disabled" disabled />
+        <p class="form-item-description">This text field is disabled.</p>
+
+      </div>
+      <div class="block-sibling">
+
+        <label class="is-invalid">Text field*</label>
+        <input type="text" class="input-text is-invalid" />
+        <p class="form-item-description is-invalid">Title is required.</p>
+
+      </div>
+      <div class="block-sibling">
+
+        <label>Textarea</label>
+        <textarea class="textarea"></textarea>
+
+      </div>
+      <div class="block-sibling">
+
+        <label>Search</label>
+        <input type="search" class="input-search" placeholder="Enter keyword(s)" />
+        <input type="submit" class="button search" value="Search" />
+
+      </div>
+    </form>
+
+    <ul class="nav-list">
+      <li class="nav-list__item">
+        <a class="nav-list__link" href="#">
+          <span class="nav-list__title">Status report</span>
+          <p class="nav-list__description">Overview of site operation and any detected problems.</p>
+        </a>
+      </li>
+      <li class="nav-list__item">
+        <a class="nav-list__link" href="#">
+          <span class="nav-list__title">Available updates</span>
+          <p class="nav-list__description">Check for updates to your installed modules and themes.</p>
+        </a>
+      </li>
+      <li class="nav-list__item">
+        <a class="nav-list__link" href="#">
+          <span class="nav-list__title">Recent log messages</span>
+        </a>
+      </li>
+    </ul>
+
+    <ul class="pager clearfix leader trailer">
+      <li class="pager__item pager__item--previous is-disabled">
+        <a class="pager__link" href="#">
+          <i class="icon icon--previous"><span class="visually-hidden">Previous</span></i>
+        </a>
+      </li>
+      <li class="pager__item"><a class="pager__link" href="#">1</a></li>
+      <li class="pager__item"><a class="pager__link" href="#">2</a></li>
+      <li class="pager__item"><a class="pager__link" href="#">3</a></li>
+      <li class="pager__item"><a class="pager__link" href="#">4</a></li>
+      <li class="pager__item"><a class="pager__link is-active" href="#">5</a></li>
+      <li class="pager__item"><a class="pager__link" href="#">6</a></li>
+      <li class="pager__item"><a class="pager__link" href="#">7</a></li>
+      <li class="pager__item"><a class="pager__link" href="#">8</a></li>
+      <li class="pager__item"><a class="pager__link" href="#">9</a></li>
+      <li class="pager__item pager__item--next">
+        <a class="pager__link" href="#">
+          <i class="icon icon--next"><span class="visually-hidden">Previous</span></i>
+        </a>
+      </li>
+    </ul>
+
+    <div class="progress">
+      <label class="label">Installing Node Module</label>
+      <div class="progress__track">
+        <div class="progress__bar" style="width: 63%"></div>
+      </div>
+      <div class="progress__description">
+        <div class="l-pull">Installed 15 of 24 modules</div>
+        <strong class="l-push">63%</strong>
+      </div>
+      <a class="progress__close" href="#" title="cancel">cancel</a>
+    </div>
+    
+    <div class="progress progress--small">
+      <label class="label label--small">Uploading syndey-opera-house-sunset.jpg</label>
+      <div class="progress__track">
+        <div class="progress__bar" style="width: 29%"></div>
+      </div>
+      <div class="progress__description">
+        <div class="l-pull">Uploaded 221 of 762KB</div>
+        <strong class="l-push">29%</strong>
+      </div>
+      <a class="progress__close" href="#" title="cancel"><span class="visually-hidden">cancel</span></a>
+    </div>
+
+    <h1 class="heading-a trailer">The Quick Brown Fox Jumps Over the Lazy Dog.</h1>
+    <h2 class="heading-b trailer">The Quick Brown Fox Jumps Over the Lazy Dog.</h2>
+    <h3 class="heading-c trailer">The Quick Brown Fox Jumps Over the Lazy Dog.</h3>
+    <h4 class="heading-d trailer-h">The Quick Brown Fox Jumps Over the Lazy Dog.</h4>
+
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do euismod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea <a href="#">commodo consequat</a>. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt ollit anim id est laborum.</p>
+
+    <p class="caption">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea.</p>
+
+  </section>
+
+  </div>
+  </div>
+{% endblock %}

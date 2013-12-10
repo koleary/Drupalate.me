@@ -1,0 +1,30 @@
+/**
+ * Hack to make css imports less tedious within individual templates.
+ */
+
+@import 'vendor/normalize.css';
+
+/**
+ * Import Drupal 8 base and module css files to work on top of
+ */
+
+@import '../D8_core/system/css/system-admin.css'; /* pulled from D8 */
+@import '../D8_core/system/css/system-diff.css'; /* pulled from D8 */
+@import '../D8_core/system/css/system-maintenance.css'; /* pulled from D8 */
+@import '../D8_core/system/css/system-module.css'; /* pulled from D8 */
+@import '../D8_core/system/css/system-theme.css'; /* pulled from D8 */
+@import '../D8_core/toolbar/css/toolbar.base.css';
+@import '../D8_core/toolbar/css/toolbar.theme.css';
+@import '../D8_core/toolbar/css/toolbar.menu.css';
+@import '../D8_core/toolbar/css/toolbar.icons.css';
+
+/**
+ * Import current seven theme css files to work on top of
+ */
+
+@import 'theme/style.css';  /* pulled from D8 seven theme */
+@import 'theme/vertical-tabs.css';  /* pulled from D8 seven theme  */
+@import 'theme/istall-page.css';  /* pulled from D8 seven theme */
+@import 'theme/edit.css';  /* pulled from D8 seven theme */
+@import 'jquery.ui.theme.css';  /* pulled from D8 seven theme */
+

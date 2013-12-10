@@ -1,0 +1,114 @@
+
+{% block content %}
+    <div id="branding" class="clearfix">
+      <nav class="breadcrumb" role="navigation">
+        <ol>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Appearance</a></li>
+        </ol>
+      </nav>
+      <h1 class="page-title">Appearance</h1> <span class="add-or-remove-shortcuts add-shortcut">☆</span>
+    </div>
+
+    <div class="l-container">
+
+    <div id="page">
+      <div class="tabs-secondary clearfix" role="navigation"></div>
+    
+    <main id="content" class="clearfix" role="main">
+      <div class="visually-hidden"><a id="main-content"></a></div>
+              <div id="console" class="clearfix">  <div class="messages messages--error visually-hidden" role="contentinfo" aria-label="Error message">
+          <div role="alert">
+                  <h2 class="visually-hidden">Error message</h2>
+                    Your version of Drupal is no longer supported. Upgrading is strongly recommended! See the <a href="#">available updates</a> page for more information and to install your missing updates.
+                </div>
+      </div>
+</div>
+                    <div id="help">
+            <div class="region region-help">
+    <div class="block block-system" id="block-seven-help" role="complementary">
+  
+    
+
+  <div class="content">
+    <p>Set and configure the default theme for your website.  Alternative <a href="http://drupal.org/project/themes">themes</a> are available.</p>
+
+  </div>
+</div>
+
+  </div>
+
+        </div>
+                    <ul class="action-links">
+          <li><a href="/admin/theme/install" class="button button--primary button--small button-action">Install new theme</a></li>
+        </ul>
+              <div class="region region-content">
+    <div class="block block-system" id="block-seven-content">
+  
+    
+
+  <div class="content">
+    <div id="system-themes-page"><div class="system-themes-list system-themes-list-enabled clearfix">
+    <h2>Enabled themes</h2>
+      <div class="theme-default theme-selector clearfix"><img class="screenshot" typeof="foaf:Image" src="../themes/seven/images/screenshot.png" alt="Screenshot for Bartik theme" title="Screenshot for Bartik theme" />
+       <div class="theme-info"><h3>Bartik 8.0-dev (default theme)</h3>
+        <div class="theme-description">A flexible, recolorable theme with many regions and a responsive, mobile-first layout.</div>
+          <ul class="operations clearfix">
+            <li class="0 odd first last"><a href="/admin/appearance/settings/bartik" title="Settings for Bartik theme">Settings</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="theme-admin theme-selector clearfix"><img class="screenshot" typeof="foaf:Image" src="../themes/seven/images/ember.png" alt="Screenshot for Seven theme" title="Screenshot for Seven theme" />
+        <div class="theme-info"><h3>Seven 8.0-dev (admin theme)</h3>
+          <div class="theme-description">A clean and friendly administration theme.</div>
+            <ul class="operations clearfix">
+              <li class="0 odd first"><a href="/admin/appearance/settings/seven" title="Settings for Seven theme">Settings</a></li><li class="1 even last"><a href="/admin/appearance/default?token=RNIQvu5Agg49XbhH9JLs6rVKsdBoRcQQGd8n8bpWnts&amp;theme=seven" title="Set Seven as default theme">Set default</a></li>
+             </ul>
+          </div>
+        </div>
+      </div>
+      <div class="system-themes-list system-themes-list-disabled clearfix">
+      <h2>Disabled theme</h2>
+        <div class="theme-selector clearfix">
+          <img class="screenshot" typeof="foaf:Image" src="../themes/seven/images/stark.png" alt="Screenshot for Stark theme" title="Screenshot for Stark theme" />
+          <div class="theme-info">
+            <h3>Stark 8.0-dev</h3>
+            <div class="theme-description">This theme demonstrates Drupal's default HTML markup and CSS styles. To learn how to build your own theme and override Drupal's default code, see the <a href="http://drupal.org/theme-guide">Theming Guide</a>.</div>
+              <ul class="operations clearfix">
+                <li class="0 odd first"><a href="/admin/appearance/enable?token=BMa9VhByqE3fhDCp8rM9cfT1ZejfgshUvMRxuv4QzF0&amp;theme=stark" title="Enable Stark theme">Enable</a></li>
+                <li class="1 even last"><a href="/admin/appearance/default?token=RNIQvu5Agg49XbhH9JLs6rVKsdBoRcQQGd8n8bpWnts&amp;theme=stark" title="Enable Stark as default theme">Enable and set default</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <form class="system-themes-admin-form" action="/admin/appearance" method="post" id="system-themes-admin-form" accept-charset="UTF-8"><div><details class="form-wrapper" open="open" id="edit-admin-theme"><summary role="button" aria-controls="edit-admin-theme" aria-expanded>Administration theme</summary><div class="details-wrapper"><div class="form-item form-type-select form-item-admin-theme">
+
+ <label for="edit-admin-theme--2">Administration theme</label> <select aria-describedby="edit-admin-theme--2--description" id="edit-admin-theme--2" name="admin_theme" class="form-select"><option value="0">Default theme</option><option value="bartik">Bartik</option><option value="seven" selected="selected">Seven</option></select>
+<div class="description" id="edit-admin-theme--2--description">Choose "Default theme" to always use the same theme as the rest of the site.</div>
+</div>
+<div class="form-item form-type-checkbox form-item-use-admin-theme">
+ <input type="checkbox" id="edit-use-admin-theme" name="use_admin_theme" value="1" checked="checked" class="form-checkbox" /> <label class="option" for="edit-use-admin-theme">Use the administration theme when editing or creating content</label>
+</div>
+<div class="form-actions form-wrapper" id="edit-actions"><input type="submit" id="edit-submit" name="op" value="Save configuration" class="button form-submit" /></div></div></details>
+<input type="hidden" name="form_build_id" value="form-rBk8plDI8BTSUFPtDcv9TmYjHq9asD8QRINonO3FITg" /><input type="hidden" name="form_token" value="f_Ttm4zX1LA463exeJL4aYmRqdrY3vNl9nacKjn2izE" /><input type="hidden" name="form_id" value="system_themes_admin_form" /></div></form>
+  </div>
+</div>
+
+  </div>
+
+    </main>
+
+    <footer id="footer" role="contentinfo">
+      
+    </footer>
+
+  </div>
+
+  </div>
+
+  </div>
+{% endblock %}

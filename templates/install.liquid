@@ -1,0 +1,61 @@
+
+{% block content %}
+      <header id="branding" class="clearfix">
+      <nav class="breadcrumb" role="navigation">
+    <h2 class="visually-hidden">You are here</h2>
+    <ol>
+          <li><a href="/">Home</a></li>
+          <li><a href="/admin">Administration</a></li>
+        </ol>
+  </nav>
+
+    
+  <h1 class="page-title">Administration</h1>
+  
+    <div class="add-or-remove-shortcuts add-shortcut">
+      <a href="/admin/config/user-interface/shortcut/manage/default/add-link-inline?token=xjOUvglIrGTYa3EXJaF366kr5Qk7el2uhigqnqZTVZQ&amp;link=admin%2Ftheme%2Finstall&amp;name=Administration&amp;destination=admin%2Ftheme%2Finstall"><span class="icon">Add or remove shortcut</span><span class="text">Add to <em class="placeholder">Default</em> shortcuts</span></a>
+    </div>
+
+    <ul class="tabs primary">
+      <li class="active"><a href="/modules" class="active">List<span class="visually-hidden">(active tab)</span></a></li>
+      <li><a href="/install">Update</a></li>
+      <li><a href="/uninstall">Uninstall</a></li>
+    </ul>
+
+      </header>
+
+  <div id="page">
+          <div class="tabs-secondary clearfix" role="navigation"></div>
+    
+    <main id="content" class="clearfix" role="main">
+      <div class="visually-hidden"><a id="main-content"></a></div>
+              <div id="console" class="clearfix"></div>
+                          <div class="region region-content">
+    <div class="block block-system" id="block-seven-content">
+  
+    
+
+  <div class="content">
+    <form class="update-manager-install-form" enctype="multipart/form-data" action="/admin/theme/install" method="post" id="update-manager-install-form" accept-charset="UTF-8"><div><p>You can find <a href="http://drupal.org/project/modules">modules</a> and <a href="http://drupal.org/project/themes">themes</a> on <a href="http://drupal.org">drupal.org</a>. The following file extensions are supported: <em class="placeholder">tar tgz gz bz2 zip</em>.</p><div class="form-item form-type-url form-item-project-url">
+ <label for="edit-project-url">Install from a URL</label> <input aria-describedby="edit-project-url--description" type="url" id="edit-project-url" name="project_url" value="" size="60" maxlength="255" class="form-url" />
+<div class="description" id="edit-project-url--description">For example: <em class="placeholder">http://ftp.drupal.org/files/projects/name.tar.gz</em></div>
+</div>
+<strong>Or</strong><div class="form-item form-type-file form-item-files-project-upload">
+ <label for="edit-project-upload">Upload a module or theme archive to install</label> <input aria-describedby="edit-project-upload--description" type="file" id="edit-project-upload" name="files[project_upload]" size="60" class="form-file" />
+<div class="description" id="edit-project-upload--description">For example: <em class="placeholder">name.tar.gz</em> from your local computer</div>
+</div>
+<input type="hidden" name="form_build_id" value="form-oZN4VSW4hYMcCxpSk6MLeMasPRKeFlPjFW7BIpC0T2s" /><input type="hidden" name="form_token" value="KT0oOFPthC_TSK-cV95oIeMW0ZaQSbrJji0NZsGsGT4" /><input type="hidden" name="form_id" value="update_manager_install_form" /><div class="form-actions form-wrapper" id="edit-actions"><input type="submit" id="edit-submit" name="op" value="Install" class="button form-submit" /></div></div></form>
+  </div>
+</div>
+
+  </div>
+
+    </main>
+
+    <footer id="footer" role="contentinfo">
+      
+    </footer>
+
+  </div>
+
+{% endblock %}

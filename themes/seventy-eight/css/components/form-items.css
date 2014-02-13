@@ -18,9 +18,9 @@ label {
 }
 /* Form items: unfocused */
 .input-text,
+.form-text,
 .textarea,
 .input-search {
-  font-size: 95%;
   border-width: 1px;
   border-color: #b8b8b8;
   border-style: solid;
@@ -30,6 +30,7 @@ label {
   color: #595959; /* Color: Light text */
 }
 .input-text,
+.form-text,
 .textarea {
   border-radius: 2px;
 }
@@ -62,6 +63,7 @@ label {
 }
 /* Form items: focused */
 .input-text:focus,
+.form-text:focus,
 .textarea:focus,
 .input-search:focus {
   border-color: #40b6ff;
@@ -70,7 +72,8 @@ label {
   background-color: #fff;
 }
 /* Form items: disabled */
-.input-text.is-disabled {
+.input-text.is-disabled,
+.form-text.is-disabled {
   border-color: #d4d4d4;
   background-color: #ededed;
   box-shadow: none;
@@ -80,6 +83,7 @@ label.is-invalid {
   color: #e62600;
 }
 .input-text.is-invalid,
+.form-text.is-invalid,
 .textarea.is-invalid {
   border-width: 2px;
   border-color: #e62600; /* Color: Error */
@@ -87,6 +91,7 @@ label.is-invalid {
   box-shadow: inset 0 5px 5px -5px #b8b8b8;
   color: #e62600;
 }
+.form-text.is-invalid:focus
 .input-text.is-invalid:focus,
 .textarea.is-invalid:focus {
   border-color: #e62600;

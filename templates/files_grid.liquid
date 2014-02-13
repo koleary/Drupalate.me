@@ -1,0 +1,358 @@
+{% block content %}
+<header id="branding" class="clearfix">
+      <nav class="breadcrumb" role="navigation">
+    <h2 class="visually-hidden">You are here</h2>
+    <ol>
+          <li><a href="/">Home</a></li>
+          <li><a href="/admin">Administration</a></li>
+          <li><a href="/admin/content">Content</a></li>
+        </ol>
+  </nav>
+    
+          <h1 class="page-title">Media files</h1> <span class="add-or-remove-shortcuts add-shortcut">☆</span>
+      
+          <ul class="tabs primary">
+            <li><a href="/content">Content</a></li>
+            <li class="active"><a href="/admin/content/files" class="active">Files<span class="visually-hidden">(active tab)</span></a></li>
+            <li><a href="/comment">Comments</a></li>
+          </ul>
+      </header>
+
+  <div id="page">
+    <div class="tabs-secondary clearfix" role="navigation"></div>
+
+      
+    
+    <main id="content" class="clearfix" role="main">
+    
+    <div class="region region-content">
+    
+    <div class="block block-system" id="block-seven-content">
+  
+  <div class="content">
+    
+  <div class="view view-files view-id-files view-display-id-page_1 view-dom-id-06b532e804237be51ca3a4e47c2c4d71381db05895b1e42318f21ff00f3423bd">
+  
+  <div class="table-tools-left">
+    <div class="tool">
+      <ul class="action-links">
+        <li><a href="/node/add" class="button button-action">Add media</a></li>
+      </ul>
+    </div>
+    <div class="tool">
+      <div class="form-item form-type-textfield" style="display: inline-block;">
+        <input type="text" id="edit-filename" name="filename" value="" placeholder="filter by name..." size="30" maxlength="128" class="form-text" />
+      </div>
+    </div>
+    <div class="tool">
+      <div class="form-item form-type-textfield" style="display: inline-block;">
+        <input type="text" id="edit-filemime" name="filemime" value="" placeholder="filter by type..." size="30" maxlength="128" class="form-text" />
+      </div>
+    </div>
+    <div class="tool">
+      <div class="form-item form-type-select" style="display: inline-block;">
+        <select id="edit-status" name="status" class="form-select"><option value="All" selected="selected">- filter by status -</option><option value="0">Temporary</option><option value="1">Permanent</option></select>
+      </div>
+    </div>
+    <div class="tool">
+      <div class="form-item">
+        <button class="button" type="button">Apply</button>
+      </div>
+    </div>
+  </div>
+  
+  <div class="table-tools-right">  
+    <div class="tool">
+      <ul class="pager" style="display: inline-block;">
+        <li class="pager__item pager__item--previous is-disabled">
+        <a class="pager__link" href="#"><i class="icon icon--previous"><span class="visually-hidden">Previous</span></i></a></li>
+        <li class="pager__item"><a class="pager__link is-active" href="#">1</a></li>
+        <li class="pager__item"><a class="pager__link" href="#">2</a></li>
+        <li class="pager__item"><a class="pager__link" href="#">3</a></li>
+        <li class="pager__item"><a class="pager__link" href="#">4</a></li>
+        <li class="pager__item pager__item--next"><a class="pager__link" href="#"><i class="icon icon--next"></i></a></li>
+      </ul>
+    </div>
+    <div class="tool">
+      <div class="form-item">
+        <div class="button-group">
+          <button class="button" type="button"><a href="/files">List</a></button>
+          <button class="button" type="button" style="margin-right: 0px;"><a href="/files_grid">Grid</a></button>
+        </div>
+      </div>
+    </div>
+  </div>
+    
+      <div class="view-content">
+      <table class="views-table views-view-table cols-6 responsive-enabled">
+        <thead>
+      <tr>
+                  <th class="views-field views-field-filename" id="view-filename-table-column" scope="col">
+            <a href="/admin/content/files?filename=&amp;filemime=&amp;status=All&amp;order=filename&amp;sort=asc" title="sort by Name">Name</a>
+          </th>
+                  <th class="views-field views-field-filemime priority-medium" id="view-filemime-table-column" scope="col">
+            <a href="/admin/content/files?filename=&amp;filemime=&amp;status=All&amp;order=filemime&amp;sort=asc" title="sort by Mime type">Mime type</a>
+          </th>
+                  <th class="views-field views-field-filesize active" id="view-filesize-table-column" scope="col">
+            <a href="/admin/content/files?filename=&amp;filemime=&amp;status=All&amp;order=filesize&amp;sort=asc" title="sort by Size">Size <img typeof="foaf:Image" src="http://drupal-8-0-alpha6.local:8083/core/themes/seven/images/arrow-asc.png" width="9" height="5" alt="Sort ascending" title="Sort ascending" /></a>
+          </th>
+                  <th class="views-field views-field-status priority-low" id="view-status-table-column" scope="col">
+            Status
+          </th>
+                  <th class="views-field views-field-timestamp priority-low" id="view-timestamp-table-column" scope="col">
+            <a href="#">Upload date</a>
+          </th>
+                  <th class="views-field views-field-count priority-medium" id="view-count-table-column" scope="col">
+            Used in
+          </th>
+          <th class="views-field views-field-count priority-high" id="view-count-table-column" scope="col">
+            Operations
+          </th>
+          </tr>
+    </thead>
+    <tbody>
+          
+          <tr class="odd views-row-first">
+              <td class="views-field views-field-filename" headers="view-filename-table-column">
+              <a href="http://drupal-8-0-alpha6.local:8083/sites/default/files/inline-images/11.file-field.png">11.file-field.png</a>
+              </td>
+              <td class="views-field views-field-filemime priority-medium" headers="view-filemime-table-column">
+                image/png
+              </td>
+              <td class="views-field views-field-filesize active" headers="view-filesize-table-column">
+                70.09 KB
+              </td>
+              <td class="views-field views-field-status priority-low" headers="view-status-table-column">
+                Permanent
+              </td>
+              <td class="views-field views-field-timestamp priority-low" headers="view-timestamp-table-column">
+                Mon, 12/16/2013 - 15:58
+              </td>
+              <td class="views-field views-field-count priority-medium" headers="view-count-table-column">
+              <a href="/admin/content/files/usage/1">1 place</a>
+              </td>
+              <td ><button class="button button--small button--popup js-popup" type="button" aria-haspopup="true" data-target="popup-1" data-component="popup">Edit <i class="caret" aria-hidden="true"></i></button></td>
+          </tr>
+
+           <tr class="odd views-row-first">
+              <td class="views-field views-field-filename" headers="view-filename-table-column">
+              <a href="http://drupal-8-0-alpha6.local:8083/sites/default/files/inline-images/11.file-field.png">11.file-field.png</a>
+              </td>
+              <td class="views-field views-field-filemime priority-medium" headers="view-filemime-table-column">
+                image/png
+              </td>
+              <td class="views-field views-field-filesize active" headers="view-filesize-table-column">
+                70.09 KB
+              </td>
+              <td class="views-field views-field-status priority-low" headers="view-status-table-column">
+                Permanent
+              </td>
+              <td class="views-field views-field-timestamp priority-low" headers="view-timestamp-table-column">
+                Mon, 12/16/2013 - 15:58
+              </td>
+              <td class="views-field views-field-count priority-medium" headers="view-count-table-column">
+              <a href="/admin/content/files/usage/1">1 place</a>
+              </td>
+              <td ><button class="button button--small button--popup js-popup" type="button" aria-haspopup="true" data-target="popup-1" data-component="popup">Edit <i class="caret" aria-hidden="true"></i></button></td>
+          </tr> <tr class="odd views-row-first">
+              <td class="views-field views-field-filename" headers="view-filename-table-column">
+              <a href="http://drupal-8-0-alpha6.local:8083/sites/default/files/inline-images/11.file-field.png">11.file-field.png</a>
+              </td>
+              <td class="views-field views-field-filemime priority-medium" headers="view-filemime-table-column">
+                image/png
+              </td>
+              <td class="views-field views-field-filesize active" headers="view-filesize-table-column">
+                70.09 KB
+              </td>
+              <td class="views-field views-field-status priority-low" headers="view-status-table-column">
+                Permanent
+              </td>
+              <td class="views-field views-field-timestamp priority-low" headers="view-timestamp-table-column">
+                Mon, 12/16/2013 - 15:58
+              </td>
+              <td class="views-field views-field-count priority-medium" headers="view-count-table-column">
+              <a href="/admin/content/files/usage/1">1 place</a>
+              </td>
+              <td ><button class="button button--small button--popup js-popup" type="button" aria-haspopup="true" data-target="popup-1" data-component="popup">Edit <i class="caret" aria-hidden="true"></i></button></td>
+          </tr> <tr class="odd views-row-first">
+              <td class="views-field views-field-filename" headers="view-filename-table-column">
+              <a href="http://drupal-8-0-alpha6.local:8083/sites/default/files/inline-images/11.file-field.png">11.file-field.png</a>
+              </td>
+              <td class="views-field views-field-filemime priority-medium" headers="view-filemime-table-column">
+                image/png
+              </td>
+              <td class="views-field views-field-filesize active" headers="view-filesize-table-column">
+                70.09 KB
+              </td>
+              <td class="views-field views-field-status priority-low" headers="view-status-table-column">
+                Permanent
+              </td>
+              <td class="views-field views-field-timestamp priority-low" headers="view-timestamp-table-column">
+                Mon, 12/16/2013 - 15:58
+              </td>
+              <td class="views-field views-field-count priority-medium" headers="view-count-table-column">
+              <a href="/admin/content/files/usage/1">1 place</a>
+              </td>
+              <td ><button class="button button--small button--popup js-popup" type="button" aria-haspopup="true" data-target="popup-1" data-component="popup">Edit <i class="caret" aria-hidden="true"></i></button></td>
+          </tr> <tr class="odd views-row-first">
+              <td class="views-field views-field-filename" headers="view-filename-table-column">
+              <a href="http://drupal-8-0-alpha6.local:8083/sites/default/files/inline-images/11.file-field.png">11.file-field.png</a>
+              </td>
+              <td class="views-field views-field-filemime priority-medium" headers="view-filemime-table-column">
+                image/png
+              </td>
+              <td class="views-field views-field-filesize active" headers="view-filesize-table-column">
+                70.09 KB
+              </td>
+              <td class="views-field views-field-status priority-low" headers="view-status-table-column">
+                Permanent
+              </td>
+              <td class="views-field views-field-timestamp priority-low" headers="view-timestamp-table-column">
+                Mon, 12/16/2013 - 15:58
+              </td>
+              <td class="views-field views-field-count priority-medium" headers="view-count-table-column">
+              <a href="/admin/content/files/usage/1">1 place</a>
+              </td>
+              <td ><button class="button button--small button--popup js-popup" type="button" aria-haspopup="true" data-target="popup-1" data-component="popup">Edit <i class="caret" aria-hidden="true"></i></button></td>
+          </tr> <tr class="odd views-row-first">
+              <td class="views-field views-field-filename" headers="view-filename-table-column">
+              <a href="http://drupal-8-0-alpha6.local:8083/sites/default/files/inline-images/11.file-field.png">11.file-field.png</a>
+              </td>
+              <td class="views-field views-field-filemime priority-medium" headers="view-filemime-table-column">
+                image/png
+              </td>
+              <td class="views-field views-field-filesize active" headers="view-filesize-table-column">
+                70.09 KB
+              </td>
+              <td class="views-field views-field-status priority-low" headers="view-status-table-column">
+                Permanent
+              </td>
+              <td class="views-field views-field-timestamp priority-low" headers="view-timestamp-table-column">
+                Mon, 12/16/2013 - 15:58
+              </td>
+              <td class="views-field views-field-count priority-medium" headers="view-count-table-column">
+              <a href="/admin/content/files/usage/1">1 place</a>
+              </td>
+              <td ><button class="button button--small button--popup js-popup" type="button" aria-haspopup="true" data-target="popup-1" data-component="popup">Edit <i class="caret" aria-hidden="true"></i></button></td>
+          </tr> <tr class="odd views-row-first">
+              <td class="views-field views-field-filename" headers="view-filename-table-column">
+              <a href="http://drupal-8-0-alpha6.local:8083/sites/default/files/inline-images/11.file-field.png">11.file-field.png</a>
+              </td>
+              <td class="views-field views-field-filemime priority-medium" headers="view-filemime-table-column">
+                image/png
+              </td>
+              <td class="views-field views-field-filesize active" headers="view-filesize-table-column">
+                70.09 KB
+              </td>
+              <td class="views-field views-field-status priority-low" headers="view-status-table-column">
+                Permanent
+              </td>
+              <td class="views-field views-field-timestamp priority-low" headers="view-timestamp-table-column">
+                Mon, 12/16/2013 - 15:58
+              </td>
+              <td class="views-field views-field-count priority-medium" headers="view-count-table-column">
+              <a href="/admin/content/files/usage/1">1 place</a>
+              </td>
+              <td ><button class="button button--small button--popup js-popup" type="button" aria-haspopup="true" data-target="popup-1" data-component="popup">Edit <i class="caret" aria-hidden="true"></i></button></td>
+          </tr> <tr class="odd views-row-first">
+              <td class="views-field views-field-filename" headers="view-filename-table-column">
+              <a href="http://drupal-8-0-alpha6.local:8083/sites/default/files/inline-images/11.file-field.png">11.file-field.png</a>
+              </td>
+              <td class="views-field views-field-filemime priority-medium" headers="view-filemime-table-column">
+                image/png
+              </td>
+              <td class="views-field views-field-filesize active" headers="view-filesize-table-column">
+                70.09 KB
+              </td>
+              <td class="views-field views-field-status priority-low" headers="view-status-table-column">
+                Permanent
+              </td>
+              <td class="views-field views-field-timestamp priority-low" headers="view-timestamp-table-column">
+                Mon, 12/16/2013 - 15:58
+              </td>
+              <td class="views-field views-field-count priority-medium" headers="view-count-table-column">
+              <a href="/admin/content/files/usage/1">1 place</a>
+              </td>
+              <td ><button class="button button--small button--popup js-popup" type="button" aria-haspopup="true" data-target="popup-1" data-component="popup">Edit <i class="caret" aria-hidden="true"></i></button></td>
+          </tr> <tr class="odd views-row-first">
+              <td class="views-field views-field-filename" headers="view-filename-table-column">
+              <a href="http://drupal-8-0-alpha6.local:8083/sites/default/files/inline-images/11.file-field.png">11.file-field.png</a>
+              </td>
+              <td class="views-field views-field-filemime priority-medium" headers="view-filemime-table-column">
+                image/png
+              </td>
+              <td class="views-field views-field-filesize active" headers="view-filesize-table-column">
+                70.09 KB
+              </td>
+              <td class="views-field views-field-status priority-low" headers="view-status-table-column">
+                Permanent
+              </td>
+              <td class="views-field views-field-timestamp priority-low" headers="view-timestamp-table-column">
+                Mon, 12/16/2013 - 15:58
+              </td>
+              <td class="views-field views-field-count priority-medium" headers="view-count-table-column">
+              <a href="/admin/content/files/usage/1">1 place</a>
+              </td>
+              <td ><button class="button button--small button--popup js-popup" type="button" aria-haspopup="true" data-target="popup-1" data-component="popup">Edit <i class="caret" aria-hidden="true"></i></button></td>
+          </tr> <tr class="odd views-row-first">
+              <td class="views-field views-field-filename" headers="view-filename-table-column">
+              <a href="http://drupal-8-0-alpha6.local:8083/sites/default/files/inline-images/11.file-field.png">11.file-field.png</a>
+              </td>
+              <td class="views-field views-field-filemime priority-medium" headers="view-filemime-table-column">
+                image/png
+              </td>
+              <td class="views-field views-field-filesize active" headers="view-filesize-table-column">
+                70.09 KB
+              </td>
+              <td class="views-field views-field-status priority-low" headers="view-status-table-column">
+                Permanent
+              </td>
+              <td class="views-field views-field-timestamp priority-low" headers="view-timestamp-table-column">
+                Mon, 12/16/2013 - 15:58
+              </td>
+              <td class="views-field views-field-count priority-medium" headers="view-count-table-column">
+              <a href="/admin/content/files/usage/1">1 place</a>
+              </td>
+              <td ><button class="button button--small button--popup js-popup" type="button" aria-haspopup="true" data-target="popup-1" data-component="popup">Edit <i class="caret" aria-hidden="true"></i></button></td>
+          </tr> <tr class="odd views-row-first">
+              <td class="views-field views-field-filename" headers="view-filename-table-column">
+              <a href="http://drupal-8-0-alpha6.local:8083/sites/default/files/inline-images/11.file-field.png">11.file-field.png</a>
+              </td>
+              <td class="views-field views-field-filemime priority-medium" headers="view-filemime-table-column">
+                image/png
+              </td>
+              <td class="views-field views-field-filesize active" headers="view-filesize-table-column">
+                70.09 KB
+              </td>
+              <td class="views-field views-field-status priority-low" headers="view-status-table-column">
+                Permanent
+              </td>
+              <td class="views-field views-field-timestamp priority-low" headers="view-timestamp-table-column">
+                Mon, 12/16/2013 - 15:58
+              </td>
+              <td class="views-field views-field-count priority-medium" headers="view-count-table-column">
+              <a href="/admin/content/files/usage/1">1 place</a>
+              </td>
+              <td ><button class="button button--small button--popup js-popup" type="button" aria-haspopup="true" data-target="popup-1" data-component="popup">Edit <i class="caret" aria-hidden="true"></i></button></td>
+          </tr>
+      </tbody>
+</table>
+
+    </div>
+  
+      
+          </div>
+
+  </div>
+</div>
+
+  </div>
+
+    </main>
+
+    <footer id="footer" role="contentinfo">
+      
+    </footer>
+
+  </div>
+  {% endblock %}

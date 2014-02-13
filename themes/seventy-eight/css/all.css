@@ -57,4 +57,19 @@ display: block;
 }
 
 
+.table-tools-left {
+	float: left;
+}
+.table-tools-right {
+	float: right;
+}
+.tool {
+	display: inline-block;
+	vertical-align: middle;
+}
+.tool label {
+	display: inline-block;
+	margin: 0 10px;
+}
+
 

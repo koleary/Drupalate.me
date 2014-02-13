@@ -16,15 +16,11 @@
         </ol>
   </nav>
 
-  <h1 class="page-title">Extend</h1>
-        <div class="add-or-remove-shortcuts add-shortcut"><a href="/admin/config/user-interface/shortcut/manage/default/add-link-inline?token=xjOUvglIrGTYa3EXJaF366kr5Qk7el2uhigqnqZTVZQ&amp;link=admin%2Fmodules&amp;name=Extend&amp;destination=admin%2Fmodules"><span class="icon">Add or remove shortcut</span><span class="text">Add to <em class="placeholder">Default</em> shortcuts</span></a></div>
-
-  <h2 class="visually-hidden">Primary tabs</h2>
-  
+  <h1 class="page-title">Extend</h1> <span class="add-or-remove-shortcuts add-shortcut">☆</span>
+       
     <ul class="tabs primary">
       <li class="active"><a href="/modules" class="active">List<span class="visually-hidden">(active tab)</span></a></li>
       <li><a href="/install">Update</a></li>
-      <li><a href="/uninstall">Uninstall</a></li>
     </ul>
     
     </header>
@@ -65,17 +61,50 @@
     
 
   <div class="content">
-    <form class="system-modules" action="/admin/modules" method="post" id="system-modules" accept-charset="UTF-8"><div><div class="table-filter js-show form-wrapper" id="edit-filters"><div class="form-item form-type-search form-item-text">
- <label for="edit-text">Search</label> <input class="table-filter-text form-search" data-table="#system-modules" autocomplete="off" title="Enter a part of the module name or description to filter by." type="search" id="edit-text" name="text" value="" size="30" maxlength="128" placeholder="Enter module name" />
-</div>
-</div><details class="package-listing form-wrapper" open="open" id="edit-modules-core"><summary role="button" aria-controls="edit-modules-core" aria-expanded>Core</summary><div class="details-wrapper"><table class="responsive-enabled">
- <thead><tr><th class="checkbox"><span class="visually-hidden">Installed</span></th><th class="name">Name</th><th class="description priority-low">Description</th> </tr></thead>
-<tbody>
- <tr class="odd"><td class="checkbox"><div class="form-item form-type-checkbox form-item-modules-Core-action-enable">
- <input type="checkbox" id="edit-modules-core-action-enable" name="modules[Core][action][enable]" value="1" class="form-checkbox" />
-</div>
-</td><td class="module"><label id="module-action" for="edit-modules-core-action-enable" class="module-name table-filter-text-source">Actions</label></td><td class="description expand priority-low"><details id="edit-modules-core-action-enable-description" class="form-wrapper"><summary role="button" aria-controls="edit-modules-core-action-enable-description"><span class="text"> Perform tasks on specific events triggered within the system.</span></summary><div class="details-wrapper"><div class="details-description"> <div class="requirements"><div class="admin-requirements">Version: 8.0-dev</div></div></div></div></details>
-</td> </tr>
+    <form class="system-modules" action="/admin/modules" method="post" id="system-modules" accept-charset="UTF-8">
+      <div>
+        <div class="table-filter js-show form-wrapper" id="edit-filters">
+          
+          <div class="form-item form-type-search form-item-text">
+            <label for="edit-text">Search</label> 
+            <input class="table-filter-text form-search" data-table="#system-modules" autocomplete="off" title="Enter a part of the     module name or description to filter by." type="search" id="edit-text" name="text" value="" size="30" maxlength="128" placeholder="Enter module name" />
+          </div>
+        
+        </div>
+        
+        <details class="package-listing form-wrapper" open="open" id="edit-modules-core">
+
+        <summary role="button" aria-controls="edit-modules-core" aria-expanded>Core</summary>
+
+        <div class="details-wrapper">
+          <table class="responsive-enabled">
+            
+            <thead><tr><th class="checkbox"><span >Uninstall</span></th><th class="name">Name</th><th class="description priority-low">Description</th> </tr></thead>
+            
+            <tbody>
+              <tr class="odd">
+                <td class="checkbox">
+                  <div class="form-item form-type-checkbox form-item-modules-Core-action-enable">
+                    <input type="checkbox" id="edit-modules-core-action-enable" name="modules[Core][action][enable]" value="1" class="form-checkbox" />
+                  </div>
+                </td>
+                  <td class="module">
+                    <label id="module-action" for="edit-modules-core-action-enable" class="module-name table-filter-text-source">Actions</label>
+                  </td>
+                  <td class="description expand priority-low">
+                    <details id="edit-modules-core-action-enable-description" class="form-wrapper">
+                    <summary role="button" aria-controls="edit-modules-core-action-enable-description">
+                    <span class="text"> Perform tasks on specific events triggered within the system.</span></summary>
+                      <div class="details-wrapper">
+                        <div class="details-description"> 
+                          <div class="requirements">
+                            <div class="admin-requirements">Version: 8.0-dev</div>
+                          </div>
+                        </div>
+                      </div>
+                    </details>
+                  </td> 
+              </tr>
  <tr class="even"><td class="checkbox"><div class="form-item form-type-checkbox form-item-modules-Core-aggregator-enable">
  <input type="checkbox" id="edit-modules-core-aggregator-enable" name="modules[Core][aggregator][enable]" value="1" class="form-checkbox" />
 </div>
